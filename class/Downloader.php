@@ -202,7 +202,7 @@ class Downloader
 
 	public static function get_youtubedl_version()
 	{
-		$soutput = shell_exec("youtube-dl --version", $out, $r);
+		$soutput = shell_exec("youtube-dl --version");
 		return trim($soutput);
 	}
 
