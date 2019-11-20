@@ -106,6 +106,7 @@
 							<p>Free space : <?php echo $file->free_space(); ?></b></p>
 							<p>Used space : <?php echo $file->used_space(); ?></b></p>
 							<p>Download folder : <?php echo $file->get_downloads_folder(); ?></p>
+							<p>Youtube-dl version : <?php echo Downloader::check_youtubedl_version(); ?></p>
 						</div>
 					</div>
 				</div>
