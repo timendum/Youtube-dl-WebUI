@@ -200,7 +200,7 @@ class Downloader
 		return $r;
 	}
 
-	private function check_youtubedl_version()
+	private static function check_youtubedl_version()
 	{
 		exec("youtube-dl --version", $out, $r);
 		return trim($out);
