@@ -200,6 +200,12 @@ class Downloader
 		return $r;
 	}
 
+	private function check_youtubedl_version()
+	{
+		exec("youtube-dl --version", $out, $r);
+		return trim($out);
+	}
+
 	private function is_extracter_installed()
 	{
 		exec("which ".$this->config["extracter"], $out, $r);
