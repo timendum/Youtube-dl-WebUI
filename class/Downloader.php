@@ -200,10 +200,10 @@ class Downloader
 		return $r;
 	}
 
-	private static function check_youtubedl_version()
+	private static function get_youtubedl_version()
 	{
-		exec("youtube-dl --version", $out, $r);
-		return trim($out);
+		$soutput = shell_exec("youtube-dl --version", $out, $r);
+		return trim($soutput);
 	}
 
 	private function is_extracter_installed()
