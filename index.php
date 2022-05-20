@@ -6,8 +6,6 @@
 	$session = Session::getInstance();
 	$file = new FileHandler;
 
-	require 'views/header.php';
-
 	if(!$session->is_logged_in())
 	{
 		header("Location: login.php");
@@ -50,6 +48,8 @@
 			}
 		}
 	}
+
+	require 'views/header.php';
 ?>
 		<div class="container">
 			<h1>Download</h1>
