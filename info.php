@@ -24,7 +24,7 @@
 		}
 	}
 ?>
-		<div class="container">
+		<div class="container my-4">
 			<h1>JSON Info</h1>
 			<?php
 
@@ -38,17 +38,15 @@
 
 			?>
 			<form id="info-form" action="info.php" method="post">
-				<div class="form-group">
+				<div class="row my-3">
 					<div class="input-group">
-						<span class="input-group-addon" id="urls-addon">URLs:</span>
+						<div class="input-group-text" id="urls-addon">URLs:</div>
 						<input class="form-control" id="url" name="urls" placeholder="Link(s) separated by a space" type="text" aria-describedby="urls-addon" required/>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-2">
+				<div class="row mt-3 align-items-center">
+					<div class="col-auto">
 						<button type="submit" class="btn btn-primary">Query</button>
-					</div>
-					<div class="col-md-10">
 					</div>
 				</div>
 
