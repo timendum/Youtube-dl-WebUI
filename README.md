@@ -22,7 +22,7 @@ It supports:
 - PHP >= 7 version should be fine.
 - Python >= 2.7 for Youtube-dl.
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) or [Youtube-dl](https://github.com/rg3/youtube-dl).
-- ffmpeg (or avconv) is required for audio extraction (from youtube-dl doc) :
+- ffmpeg (or avconv) is required for audio extraction, from youtube-dl doc :
 `-x, --extract-audio convert video files to audio-only files (requires ffmpeg or avconv and ffprobe or avprobe)`
 
 ## How to install ?
@@ -55,12 +55,20 @@ If you want to check the download process, enable logging with these instruction
 1. Check the `logFolder` value.
 
 
-## CSS Theme
-[Lumen](https://bootswatch.com/lumen/)
+## Library
+
+Youtube-dl WebUI uses:
+
+- [Bootstrap 5](https://getbootstrap.com/docs/5.2/) (with Popper and jQuery 3)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) or [youtube-dl](https://youtube-dl.org/) (or any compatible fork)
+- [FFmpeg](https://ffmpeg.org/) for media manipulation, if present
+- [Python](http://python.org/) for JSON formatting, if present
+
 
 ## License
 
-Copyright (c) 2018-2021 Timendum
+Copyright (c) 2018-2022 Timendum
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
