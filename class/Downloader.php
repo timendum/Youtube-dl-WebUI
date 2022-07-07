@@ -28,7 +28,7 @@ class Downloader
 			$this->outfilename = $this->config["outfilename"];
 		}
 
-		$this->urls = explode(" ", trim($post));
+		$this->urls = preg_split("/[\s,]+/", trim($post));
 
 		if(!$this->check_requirements())
 		{
