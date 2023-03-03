@@ -118,11 +118,11 @@
 							<p><b>How does it work ?</b></p>
 							<p>Simply paste your video link in the field and click "Download"</p>
 							<p><b>With which sites does it work?</b></p>
-							<p><a href="https://ytdl-org.github.io/youtube-dl/supportedsites.html">Here's</a> a list of the supported sites</p>
+							<p><a href="https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md">Here's</a> a list of the supported sites</p>
 							<p><b>How can I download the video on my computer?</b></p>
 							<p>Go to <a href="./list.php">List of files</a> -> choose one -> right click on the link -> "Save target as ..." </p>
 							<p><b>What's Filename or Format field?</b></p>
-							<p>They are optional, see the official documentation about <a href="https://github.com/ytdl-org/youtube-dl/blob/master/README.md#format-selection">Format selection</a> or <a href="https://github.com/ytdl-org/youtube-dl/blob/master/README.md#output-template">Output template</a> </p>
+							<p>They are optional, see the official documentation about <a href="https://github.com/yt-dlp/yt-dlp/blob/master/README.md#format-selection">Format selection</a> or <a href="https://github.com/yt-dlp/yt-dlp/blob/master/README.md#output-template">Output template</a> </p>
 						</div>
 					</div>
 				</div>
