@@ -24,7 +24,7 @@ class Session
 		ini_set("session.name", $session_name);
 		ini_set("session.use_only_cookies", true);
 		ini_set("session.gc_maxlifetime", $session_expire);
-		ini_set("session.cookie_lifetime", min(0, $this->config["log"]["session_lifetime"]));
+		ini_set("session.cookie_lifetime", min(0, $this->config["session_lifetime"]));
 		session_start();
 
 		if($this->config["security"])
