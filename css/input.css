@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .nav-menu>li>a {
+        @apply flex gap-1 items-baseline;
+    }
+
+    .nav-menu>li>a>spana {
+        @apply inline-block;
+        @apply align-middle;
+    }
+
+    .nav-menu>li>a>span svg {
+        @apply hidden;
+    }
+
+    @media screen(md) {
+        .nav-menu>li>a>span svg {
+            @apply inline-block;
+        }
+    }
+
+    .infotext p {
+        @apply py-1;
+
+    }
+    
+    .filelist tbody td {
+        @apply p-1;
+    }
+    @media screen(lg) {
+        .filelist tbody td {
+            @apply p-2;
+        }
+    }
+    .filelist .btn-delete {
+        @apply text-white bg-red-600 hover:bg-red-800 focus:ring-2 focus:ring-red-200 font-medium rounded-lg text-sm px-2 py-0.5 focus:ring-red-800;
+    }
+    @media screen(lg) {
+        .filelist .btn-delete {
+            @apply px-3 py-1.5;
+        }
+    }
+    .dropdown:focus-within .dropdown-menu {
+        display:block;
+    }
+}

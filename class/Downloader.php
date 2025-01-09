@@ -28,7 +28,7 @@ class Downloader
 			$this->outfilename = $this->config["outfilename"];
 		}
 
-		$this->urls = preg_split("/[\s,]+/", trim($post));
+		$this->urls = preg_split("/[\s,\n]+/", trim($post));
 
 		if(!$this->check_requirements())
 		{
@@ -110,7 +110,7 @@ class Downloader
 	public static function background_jobs()
 	{
 		$config = require dirname(__DIR__).'/config/config.php';
-		return shell_exec("ps aux | grep -v grep | grep -v \"".$config["bin"]." -U\" | grep \"".$config["bin"]." \" | wc -l");
+		return trim(shell_exec("ps aux | grep -v grep | grep -v \"".$config["bin"]." -U\" | grep \"".$config["bin"]." \" | wc -l"));
 	}
 
 	public static function max_background_jobs()
@@ -218,7 +218,7 @@ class Downloader
 
 	private function is_python_installed()
 	{
-		exec("which python", $out, $r);
+		exec("which python3", $out, $r);
 		return $r;
 	}
 
@@ -315,7 +315,7 @@ class Downloader
 
 		if ($this->is_python_installed() == 0)
 		{
-			$cmd .= " | python -m json.tool";
+			$cmd .= " | python3 -m json.tool";
 		}
 
 		$soutput = shell_exec($cmd);
