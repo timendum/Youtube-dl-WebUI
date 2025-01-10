@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>Youtube-dl WebUI</title>
 		<link rel="stylesheet" href="./css/output.css">
 		<link rel="Shortcut Icon" href="./favicon_144.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<nav class="bg-gray-100 px-2 lg:px-4 py-1 lg:py-3">
